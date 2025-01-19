@@ -36,14 +36,8 @@ random.seed(SEED)
 with open("Output/model_metrics.json", "r") as f:
     metrics_dict = json.load(f)
 
-# Google Drive file URL for model.h5
-file_url = "https://drive.google.com/uc?id=1huL59c3tZJBhNdQmPwN0_5SfEmRw0Q2s&export=download"
-
-# Download the file using gdown
-gdown.download(file_url, "model.h5", quiet=False, fuzzy=True)
-
 # Load the model
-vgg_model = h5py.File("model.h5", 'r')
+vgg_model = tf.keras.models.load_model("Output/vgg_model.h5")    # VGG16 model
 
 # vgg_model = tf.keras.models.load_model("Output/vgg_model.h5")    # VGG16 model
 vgg_accuracy = metrics_dict["vgg_accuracy"]
