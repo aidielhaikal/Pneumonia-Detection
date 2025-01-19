@@ -12,6 +12,6 @@ This project aims to address the pneumonia detection problem, a leading cause of
 
 
 ### Screenshot of Application
-The chosen model (VGG-16) was deployed in a Streamlit web application, which allows users to upload X-ray images and receive predictions on Pneumonia classification. 
+The chosen model (VGG-16) was deployed in a Streamlit web application, which allows users to upload X-ray images and receive predictions on Pneumonia classification. You can access the dashboard via the following link: [Streamlit App](https://pneumonia-detection-udppappbbw4mvx73tyjpfzq.streamlit.app/)
 
 <img width="611" alt="image" src="https://github.com/user-attachments/assets/ad93bc6e-7e72-4b1e-8ae3-9b873281911d" />
