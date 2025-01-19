@@ -305,7 +305,7 @@ def main():
         **Yellow Marking:** 
         - The yellow markings on the image represent the most influential regions for the model's prediction. These areas are the parts of the image that the model considered most important when making its decision. In this case, the highlighted regions are contributing significantly to the model's classification.
         """)
-        lime_explanation(temp_image_path, vgg_model, target_size=(150, 150), num_samples=100, top_labels=1, hide_color=0, num_features=10)
+        lime_explanation(temp_image_path, vgg_model, target_size=(150, 150), num_samples=1000, top_labels=1, hide_color=0, num_features=10)
 
 
 if __name__ == "__main__":
